@@ -15,6 +15,7 @@ import { EndUserAgreementContentComponent } from './app/info/end-user-agreement/
 import { EndUserAgreementComponent } from './app/info/end-user-agreement/end-user-agreement.component';
 import {AboutComponent} from './app/info/about/about.component';
 import {AboutContentComponent} from './app/info/about/about-content/about-content.component';
+import {FooterComponent} from './app/footer/footer.component';
 import {NgbAccordionModule} from '@ng-bootstrap/ng-bootstrap';
 
 /**
@@ -35,6 +36,7 @@ const DECLARATIONS = [
   EndUserAgreementComponent,
   AboutComponent,
   AboutContentComponent,
+  FooterComponent
 ];
 
 @NgModule({
