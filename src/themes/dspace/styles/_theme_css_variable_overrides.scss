@@ -4,8 +4,11 @@
   --ds-header-logo-height: 40px;
   --ds-banner-text-background: rgba(0, 0, 0, 0.45);
   --ds-banner-background-gradient-width: 300px;
-  --ds-home-news-link-color: #{$green};
-  --ds-home-news-link-hover-color: #{darken($green, 15%)};
-  --ds-header-navbar-border-bottom-color: #{$green};
+  --ds-home-news-link-color: #{$red};
+  --ds-home-news-link-hover-color: #{darken($red, 15%)};
+  --ds-header-navbar-border-bottom-color: #{$red};
+  --ds-expandable-navbar-bg: #{$red};
+  --ds-expandable-navbar-link-color-hover: #{$white};
+  --ds-expandable-navbar-link-color: #{$white};
 }
 

@@ -12,7 +12,10 @@ import { FeedbackComponent } from './feedback/feedback.component';
 import { FeedbackFormComponent } from './feedback/feedback-form/feedback-form.component';
 import { ThemedFeedbackFormComponent } from './feedback/feedback-form/themed-feedback-form.component';
 import { ThemedFeedbackComponent } from './feedback/themed-feedback.component';
+import { ThemedAboutComponent } from './about/themed-about.component';
 import { FeedbackGuard } from '../core/feedback/feedback.guard';
+import {AboutContentComponent} from './about/about-content/about-content.component';
+import {AboutComponent} from './about/about.component';
 
 
 const DECLARATIONS = [
@@ -25,7 +28,11 @@ const DECLARATIONS = [
   FeedbackComponent,
   FeedbackFormComponent,
   ThemedFeedbackFormComponent,
-  ThemedFeedbackComponent
+  ThemedFeedbackComponent,
+  ThemedFeedbackComponent,
+  AboutContentComponent,
+  AboutComponent,
+  ThemedAboutComponent,
 ];
 
 @NgModule({

@@ -1,0 +1,105 @@
+<h1>{{ 'info.about.head' | translate }}</h1>
+<p><em>Last updated May 4, 2023</em></p>
+
+<div class="">
+  <ngb-accordion #acc="ngbAccordion" activeIds="panel1">
+
+    <ngb-panel id="panel1">
+      <ng-template ngbPanelHeader>
+        <div class="w-100 d-flex justify-content-between collapse-toggle" ngbPanelToggle (click)="acc.toggle('panel1')">
+          <button type="button" class="btn btn-link p-0" (click)="$event.preventDefault()" [attr.aria-expanded]="!acc.isExpanded('panel1')"
+                  aria-controls="collapsePanels">
+            Τι είναι το αποθετήριο?
+          </button>
+          <div class="text-right d-flex">
+            <div class="ml-3 d-inline-block">
+              <span *ngIf="acc.isExpanded('panel1')" class="fas fa-chevron-up fa-fw"></span>
+              <span *ngIf="!acc.isExpanded('panel1')" class="fas fa-chevron-down fa-fw"></span>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        Το Αποθετήριο Εκπαιδευτικού Περιεχομένου Παιδαγωγικού Τμήματος Δημοτικής Αγωγής του Πανεπιστημίου Θεσσαλίας
+        αποτελεί μια διαδυκτιακή πλατφόρμα του τμήματος Δημοτικής Αγωγής του Π.Θ. το οποίο δίνει την δυνατότητα στους/στις διδάσκοντες
+        του τμήματος να αναρτούν καλές πρακτικές Σχολικής Πρακτικής Άσκησης και επιλεγμένων εργασιών μαθημάτων καθώς και πτυχιακών και διπλωματικών
+        εργασιών φοιτητών/τριών του τμήματος.
+      </ng-template>
+    </ngb-panel>
+
+    <ngb-panel id="panel2">
+      <ng-template ngbPanelHeader>
+        <div class="w-100 d-flex justify-content-between collapse-toggle" ngbPanelToggle (click)="acc.toggle('panel2')">
+          <button type="button" class="btn btn-link p-0" (click)="$event.preventDefault()" [attr.aria-expanded]="!acc.isExpanded('panel2')"
+                  aria-controls="collapsePanels">
+            Όροι χρήσης
+          </button>
+          <div class="text-right d-flex">
+            <div class="ml-3 d-inline-block">
+              <span *ngIf="acc.isExpanded('panel2')" class="fas fa-chevron-up fa-fw"></span>
+              <span *ngIf="!acc.isExpanded('panel2')" class="fas fa-chevron-down fa-fw"></span>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        Οι όροι χρήσης αναπτύσσονται στην υποσελίδα <a href="/info/end-user-agreement">Όροι Χρήσης</a>
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel id="panel3">
+      <ng-template ngbPanelHeader>
+        <div class="w-100 d-flex justify-content-between collapse-toggle" ngbPanelToggle (click)="acc.toggle('panel3')">
+          <button type="button" class="btn btn-link p-0" (click)="$event.preventDefault()" [attr.aria-expanded]="!acc.isExpanded('panel3')"
+                  aria-controls="collapsePanels">
+            Επικοινωνία
+          </button>
+          <div class="text-right d-flex">
+            <div class="ml-3 d-inline-block">
+              <span *ngIf="acc.isExpanded('panel3')" class="fas fa-chevron-up fa-fw"></span>
+              <span *ngIf="!acc.isExpanded('panel3')" class="fas fa-chevron-down fa-fw"></span>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        <h5 style="padding-top: 10px">Γενικά στοιχεία επικοινωνίας:</h5>
+        <p ><i class="fas fa-envelope-square"></i> <a href="mailto:admin@uth.gr" style="font-size: large;"> admin@uth.gr</a></p>
+        <hr/>
+        <h5>Επικοινωνία με τους υπεύθυνους του έργου:</h5>
+        <table>
+          <tr>
+            <th>Ονοματεπώνυμο</th>
+            <th>Ιδιότητα</th>
+            <th>email</th>
+          </tr>
+          <tr>
+            <td>Πολίτης Παναγιώτης</td>
+            <td>Αναπληρωτής Καθηγητής</td>
+            <td><a href="mailto:ppol@uth.gr">ppol@uth.gr</a></td>
+          </tr>
+          <tr>
+            <td>Παπαρούση Μαρία</td>
+            <td>Επιστημονική Υπέυθυνος του Έργου - Αναπληρώτρια Καθηγήτρια</td>
+            <td><a href="mailto:mpaparou@uth.gr">mpaparou@uth.gr</a></td>
+          </tr>
+          <!-- <tr>
+            <td>Παππάς Νικόλαος</td>
+            <td>Ανάδοχος του Έργου</td>
+            <td><a href="mailto:npappas@uth.gr">npappas@uth.gr</a></td>
+          </tr> -->
+
+        </table>
+      </ng-template>
+    </ngb-panel>
+  </ngb-accordion>
+
+  <p style="margin-top: 20px">
+    Οι υπηρεσίες του «Αποθετηρίου Εκπαιδευτικού Περιεχομένου Παιδαγωγικού Τμήματος Δημοτικής Αγωγής του Πανεπιστημίου Θεσσαλίας»
+    αναπτύχθηκαν στα πλαίσιο του έργου « <i>Ενίσχυση λειτουργικών και εκπαιδευτικών αναγκών - ΠΤΔΕ</i> » το οποίο χρηματοδοτήθηκε από το
+    <a href="https://ee.uth.gr/">ΕΛΚΕ</a>.
+  </p>
+
+</div>
+
+
+

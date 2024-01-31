@@ -9,6 +9,13 @@ import { RootModule } from '../../app/root.module';
 import { NavbarModule } from '../../app/navbar/navbar.module';
 import { SharedBrowseByModule } from '../../app/shared/browse-by/shared-browse-by.module';
 import { ResultsBackButtonModule } from '../../app/shared/results-back-button/results-back-button.module';
+import { ExpandableNavbarSectionComponent } from './app/navbar/expandable-navbar-section/expandable-navbar-section.component';
+import { PrivacyContentComponent } from './app/info/privacy/privacy-content/privacy-content.component';
+import { EndUserAgreementContentComponent } from './app/info/end-user-agreement/end-user-agreement-content/end-user-agreement-content.component';
+import { EndUserAgreementComponent } from './app/info/end-user-agreement/end-user-agreement.component';
+import {AboutComponent} from './app/info/about/about.component';
+import {AboutContentComponent} from './app/info/about/about-content/about-content.component';
+import {NgbAccordionModule} from '@ng-bootstrap/ng-bootstrap';
 
 /**
  * Add components that use a custom decorator to ENTRY_COMPONENTS as well as DECLARATIONS.
@@ -22,6 +29,12 @@ const DECLARATIONS = [
   HeaderComponent,
   HeaderNavbarWrapperComponent,
   NavbarComponent,
+  ExpandableNavbarSectionComponent,
+  PrivacyContentComponent,
+  EndUserAgreementContentComponent,
+  EndUserAgreementComponent,
+  AboutComponent,
+  AboutContentComponent,
 ];
 
 @NgModule({
@@ -32,6 +45,7 @@ const DECLARATIONS = [
     ResultsBackButtonModule,
     RootModule,
     NavbarModule,
+    NgbAccordionModule,
   ],
   declarations: DECLARATIONS,
   providers: [
