@@ -1680,6 +1680,8 @@
 
   "footer.link.end-user-agreement": "End User Agreement",
 
+  "footer.link.about": "Repository Information",
+
   "footer.link.feedback": "Send Feedback",
 
   "forgot-email.form.header": "Forgot Password",
@@ -1919,6 +1921,12 @@
   "info.privacy.head": "Privacy Statement",
 
   "info.privacy.title": "Privacy Statement",
+
+  "info.about.title": "Repository Information",
+
+  "info.about.head": "Repository Information",
+
+  "info.about.breadcrumbs": "Repository Information",
 
   "info.feedback.breadcrumbs": "Feedback",
 
